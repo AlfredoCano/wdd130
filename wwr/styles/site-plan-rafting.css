@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap");
 
+/*this root helps to link with one value all the pages*/
 :root {
   --primary-color: #003566;
   --secondary-color: #ffc300;
@@ -15,6 +16,7 @@
   --nav-hover-background-color: #003566;
 }
 
+/* From this point, all the structure of the pages is done*/
 body {
   max-width: 960px;
   padding: 20px;
