@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap");
+
+:root {
+  --primary-color: #003566;
+  --secondary-color: #ffc300;
+  --accent1-color: #001d3d;
+  --accent2-color: #ffd60a;
+
+  --heading-font: Roboto, serif;
+  --paragraph-font: open Sans, serif;
+
+  --nav-background-color: #000814;
+  --nav-link-color: #ffd60a;
+  --nav-hover-link-color: #ffc300;
+  --nav-hover-background-color: #227acd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+body {
+  background-color: rgb(233, 240, 244);
+}
+p {
+  padding: 25px;
+  font-family: sans-serif;
+  color: var(--primary-color);
+}
+
+header {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 25px;
+}
+
+nav {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-background-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Class Selectors */
+
+.hero img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+.hero article p {
+  position: absolute;
+  top: 400px;
+  left: 11px;
+  margin: 1rem;
+  border: 1px solid rgba(247, 230, 163, 0);
+  padding: 1rem;
+  background-color: var(--nav-hover-background-color);
+  color: #fefcd4f5;
+  width: 100%;
+}
+
+.hero article img {
+  position: absolute;
+  float: left;
+  margin: 10px;
+  border: 1px solid #000;
+  padding: 1px;
+  background-color: #bbb;
+  width: 200px;
+  height: auto;
+  top: 450px;
+  right: 2%;
+}
+
+.adventure img {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 5px;
+}
+
+.sociallinks img {
+  width: 40px;
+}
