@@ -28,6 +28,7 @@ h6 {
 body {
   background-color: rgb(233, 240, 244);
 }
+
 p {
   padding: 25px;
   font-family: sans-serif;
@@ -36,6 +37,23 @@ p {
 
 header {
   padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+header img {
+  grid-column: 1 / 2;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header a {
+  font-size: 40px;
 }
 
 a {
@@ -46,11 +64,12 @@ a {
 nav {
   font-size: 1.2rem;
   display: flex;
+  grid-column: 2 / 3;
 }
 
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: var(--accent1-color);
 }
 
 nav a:hover {
@@ -99,13 +118,50 @@ nav a:hover {
   right: 2%;
 }
 
-.adventure img {
+.adventure-gallery {
   display: flex;
-  flex-direction: column;
-  width: 500px;
-  border: 5px;
+  flex-wrap: row nowrap;
+  justify-content: space-evenly;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 390px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.adventure {
+  text-align: center;
 }
 
 .sociallinks img {
-  width: 40px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.history {
+  font-family: var(--paragraph-font);
+}
+
+footer {
+  background-color: #abd7ec;
+  display: flex;
+  align-items: center;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
 }
